@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <br>
+      
+      <p class="day" id="currentDay" >
+
+      <script type="text/javascript">
+        var myDate = new Date();
+        var myDay = myDate.getDay();
+        
+        // Array of days.
+        var weekday = ['Sunday', 'Monday', 'Tuesday',
+            'Wednesday', 'Thursday', 'Friday', 'Saturday'
+        ];
+        document.write("Today is : " + weekday[myDay]);
+        document.write("<br/>");
+
+      </script>
+      
+    <br>  
+      
+<script>
+
+  var today = new Date();
+  
+  //var date = (today.getMonth()+1)+'-'+(today.getDate())+'-'+today.getFullYear();
+  //document.getElementById("currentDate").value = date;
+
+     // Array of months.
+     var monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
+     'August', 'September', 'Octoner', 'November', 'December'
+     ];
+     
+     var d = new Date();
+     document.write( monthNames[d.getMonth()]+'-'+(today.getDate())+'-'+today.getFullYear());
+</script>
+</p>
+
+
+
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+      <div class="time-block">
+         
+         <input class="hour" type="time" name="hour" placeholder="Enter hour"/>
+
+         <input class="row" type="text" id="text" placeholder="Enter task description"/>
+
+         <button class="saveBtn" id="save-task" type="submit">Add Task</button>
+
+      </div>  
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script>document.getElementById("text").setAttribute('size', '50');</script>
+  </body>
+</html>
