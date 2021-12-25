@@ -32,41 +32,59 @@ textarea{
 }
 
 .container {
-  display: flex;
-  position: absolute;
+  display:flex;
+  position:relative;
   align-items:center;
-  margin: 2px 0 0 20px;
-  justify-content: space-between;
+  
+  justify-content:stretch;
 }
 
 .time-block{
   display: flex;
   text-align: center;
   border-radius: 15px;
-  width: 120%;
+  width: 100%;
   justify-content:space-around;
   
 }
 
-.time-block .time {
-  width: 25%;
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-.time-block .text {
-  width: 60%;
+td {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+  text-align: right;
+  padding: 8px;
 }
 
+th {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;
+  text-align: left;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
 
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
+  border-top: 1px solid white;
+  margin-left: 0;
 }
 
 .hour {
   background-color: #ffffff;
-  color: #000000;
+  color: #000000;89
   border-top: 1px dashed #000000;
 }
 
@@ -86,12 +104,13 @@ textarea{
 }
 
 .saveBtn {
+  height: 80px;
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
-}
+  }
 
 .saveBtn i:hover {
   font-size: 20px;
