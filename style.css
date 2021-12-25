@@ -103,7 +103,7 @@ tr:nth-child(even) {
   color: white;
 }
 
-.saveBtn {
+.eightBtn, .saveBtn {
   height: 80px;
   border-left: 1px solid black;
   border-top-right-radius: 15px;

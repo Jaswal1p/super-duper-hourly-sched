@@ -78,14 +78,14 @@
      
       <table>
         <tr>
-          <td style="width:13%">8 AM</td>
+          <td style="width:10%">8 AM</td>
           <th style="width:75%"><input class="row" type="text" id="text" placeholder="Enter task description" size="100"/></th>
-          <th style="width:12%"><button class="saveBtn" id="save-task" type="submit">Add Task</button></th>
+          <th style="width:12%"><button class="eightBtn" id="eight-task" type="submit">Add Task</button></th>
         </tr>
         <tr>
           <td style="width:13%">9 AM</td>
           <th style="width:75%"><input class="row" type="text" id="text" placeholder="Enter task description" size="100"/></th>
-          <th style="width:12%"><button class="saveBtn" id="save-task" type="submit">Add Task</button></th>
+          <th style="width:12%"><button class="saveBtn" id="9am-task" type="submit">Add Task</button></th>
         </tr>
         <tr>
           <td style="width: 13%">10 AM</td>
@@ -103,7 +103,7 @@
           <th style="width: 12%"><button class="saveBtn" id="save-task" type="submit">Add Task</button></th>
         </tr>
         <tr>
-          <td style="width: 13%">1 PM</td>
+          <td style="width: 10%">1 PM</td>
           <th style="width: 75%"><input class="row" type="text" id="text" placeholder="Enter task description" size="100"/></th>
           <th style="width: 12%"><button class="saveBtn" id="save-task" type="submit">Add Task</button></th>
         </tr>
@@ -135,5 +135,12 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script>document.getElementById("text").setAttribute('size', '100');</script>
+    <script>var eightBtn = document.querySelector("#eight-task");
+
+
+       eightBtn.addEventListener("click", function() {
+       alert("Finally got right button to click!");
+       });
+    </script>
   </body>
 </html>
