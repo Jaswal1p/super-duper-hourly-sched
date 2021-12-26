@@ -63,6 +63,7 @@ td {
 }
 
 th {
+  
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
@@ -75,10 +76,11 @@ th {
   background-color: #dddddd;
 }*/
 
-.row {
+.row, .eightRow {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
+  background-color: azure;
   margin-left: 0;
 }
 
