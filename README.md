@@ -17,12 +17,14 @@ I would like you to give me feedback on following points -
 
     1. Am I directionally correct on this challenge?
 
-    2. Was I correct to go choose Table model for this project? I realize that I could have done it with <divs> too.
+    2. Was I correct to go with Table model for this project? I realize that I could have done it with <divs> too.
 
-    3. Any other material concept understanding mistake (not the details as I would like to work and learn by myself)? 
+    3. Any other material concept understanding mistake (not expecting fine details as I would like to work and learn by myself)? 
 
 
-Thanks.    
+For me feedback is the most important thing.
+
+Thank you.
 
          
 
