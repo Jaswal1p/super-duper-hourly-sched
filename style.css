@@ -71,9 +71,9 @@ th {
   border-bottom-right-radius: 15px;
 }
 
-tr:nth-child(even) {
+/*tr:nth-child(even) {
   background-color: #dddddd;
-}
+}*/
 
 .row {
   white-space: pre-wrap;
@@ -103,7 +103,9 @@ tr:nth-child(even) {
   color: white;
 }
 
-.eightBtn, .saveBtn {
+.eightBtn, .nineBtn, .tenBtn, .elevBtn,
+.twelBtn, .onepBtn, .twopBtn, .thrpBtn,
+.forpBtn, .fivpBtn {
   height: 80px;
   border-left: 1px solid black;
   border-top-right-radius: 15px;

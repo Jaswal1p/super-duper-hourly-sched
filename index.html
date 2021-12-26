@@ -29,48 +29,69 @@
       <br>
       <br>
       
-      <p class="day" id="currentDay" >
+    <p class="day" id="currentDay" ></p>
 
       <script type="text/javascript">
-        var myDate = new Date();
-        var myDay = myDate.getDay();
+           var myDate = new Date();
+           var myDay = myDate.getDay();
         
-        // Array of days.
-        var weekday = ['Sunday', 'Monday', 'Tuesday',
+           // Array of days.
+           var weekday = ['Sunday', 'Monday', 'Tuesday',
             'Wednesday', 'Thursday', 'Friday', 'Saturday'
-        ];
-        document.write("Today is : " + weekday[myDay]);
-        document.write("<br/>");
-
+             ];
+            
+             document.write("Today is : " + weekday[myDay]);
+             document.write("<br/>");
       </script>
       
-    <br>  
+        <br>  
       
-<script>
+      <script>
 
-  var today = new Date();
+           var today = new Date();
   
   //var date = (today.getMonth()+1)+'-'+(today.getDate())+'-'+today.getFullYear();
   //document.getElementById("currentDate").value = date;
 
-     // Array of months.
-     var monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
-     'August', 'September', 'Octoner', 'November', 'December'
-     ];
+          // Array of months.
+          var monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
+              'August', 'September', 'Octoner', 'November', 'December'
+              ];
      
-     var d = new Date();
-     document.write( monthNames[d.getMonth()]+'-'+(today.getDate())+'-'+today.getFullYear());
-</script>
-</p>
+          var d = new Date();
+             document.write( monthNames[d.getMonth()]+'-'+(today.getDate())+'-'+today.getFullYear());
+  
+     
+     
 
+      </script>
+<br>
+<br>
+
+    <p>Time Now: <span id="datetime"></span></p>
+
+      <script>
+         var dt = new Date();
+         document.getElementById("datetime").textContent = datetime;
+
+        function refreshTime() {
+          const timeDisplay = document.getElementById("datetime");
+          const dateString = new Date().toLocaleString();
+          const formattedString = dateString.replace(", ", " - ");
+          timeDisplay.textContent = formattedString;
+          }
+  
+        setInterval(refreshTime, 1000);
+    </script>
+  </p>
 
 
     </header>
-       <div class="container">
 
+    <div class="container">
 
       <!-- Timeblocks go here -->
-    <!-- <div class="time-block">     
+      <!-- <div class="time-block">     
          <input class="hour" type="text" name="hour" placeholder="9 AM"/>
          <input class="row" type="text" id="text" placeholder="Enter task description"/>
          <button class="saveBtn" id="save-task" type="submit">Add Task</button>
@@ -78,54 +99,54 @@
      
       <table>
         <tr>
-          <td style="width:10%">8 AM</td>
+          <td style="width:13%">8 AM</td>
           <th style="width:75%"><input class="row" type="text" id="text" placeholder="Enter task description" size="100"/></th>
           <th style="width:12%"><button class="eightBtn" id="eight-task" type="submit">Add Task</button></th>
         </tr>
         <tr>
           <td style="width:13%">9 AM</td>
           <th style="width:75%"><input class="row" type="text" id="text" placeholder="Enter task description" size="100"/></th>
-          <th style="width:12%"><button class="saveBtn" id="9am-task" type="submit">Add Task</button></th>
+          <th style="width:12%"><button class="nineBtn" id="nine-task" type="submit">Add Task</button></th>
         </tr>
         <tr>
           <td style="width: 13%">10 AM</td>
           <th style="width: 75%"><input class="row" type="text" id="text" placeholder="Enter task description" size="100"/></th>
-          <th style="width: 12%"><button class="saveBtn" id="save-task" type="submit">Add Task</button></th>
+          <th style="width: 12%"><button class="tenBtn" id="ten-task" type="submit">Add Task</button></th>
         </tr>
         <tr>
           <td style="width: 13%">11 AM</td>
           <th style="width: 75%"><input class="row" type="text" id="text" placeholder="Enter task description" size="100"/></th>
-          <th style="width: 12%"><button class="saveBtn" id="save-task" type="submit">Add Task</button></th>
+          <th style="width: 12%"><button class="elevBtn" id="elev-task" type="submit">Add Task</button></th>
         </tr>
         <tr>
           <td style="width: 13%">12 Noon</td>
           <th style="width: 75%"><input class="row" type="text" id="text" placeholder="Enter task description" size="100"/></th>
-          <th style="width: 12%"><button class="saveBtn" id="save-task" type="submit">Add Task</button></th>
+          <th style="width: 12%"><button class="twelBtn" id="twel-task" type="submit">Add Task</button></th>
         </tr>
         <tr>
           <td style="width: 10%">1 PM</td>
           <th style="width: 75%"><input class="row" type="text" id="text" placeholder="Enter task description" size="100"/></th>
-          <th style="width: 12%"><button class="saveBtn" id="save-task" type="submit">Add Task</button></th>
+          <th style="width: 12%"><button class="onepBtn" id="onep-task" type="submit">Add Task</button></th>
         </tr>
         <tr>
           <td style="width: 13%">2 PM</td>
           <th style="width: 75%"><input class="row" type="text" id="text" placeholder="Enter task description" size="100"/></th>
-          <th style="width: 12%"><button class="saveBtn" id="save-task" type="submit">Add Task</button></th>
+          <th style="width: 12%"><button class="twopBtn" id="twop-task" type="submit">Add Task</button></th>
         </tr>
         <tr>
           <td style="width: 13%">3 PM</td>
           <th style="width: 75%"><input class="row" type="text" id="text" placeholder="Enter task description" size="100"/></th>
-          <th style="width: 12%"><button class="saveBtn" id="save-task" type="submit">Add Task</button></th>
+          <th style="width: 12%"><button class="thrpBtn" id="thrp-task" type="submit">Add Task</button></th>
         </tr>
         <tr>
           <td style="width: 13%">4 PM</td>
           <th style="width: 75%"><input class="row" type="text" id="text" placeholder="Enter task description" size="100"/></th>
-          <th style="width: 12%"><button class="saveBtn" id="save-task" type="submit">Add Task</button></th>
+          <th style="width: 12%"><button class="forpBtn" id="forp-task" type="submit">Add Task</button></th>
         </tr>
         <tr>
           <td style="width: 13%">5 PM</td>
           <th style="width: 75%"><input class="row" type="text" id="text" placeholder="Enter task description" size="100"/></th>
-          <th style="width: 12%"><button class="saveBtn" id="save-task" type="submit">Add Task</button></th>
+          <th style="width: 12%"><button class="fivpBtn" id="fivp-task" type="submit">Add Task</button></th>
         </tr>
       </table>
 
@@ -135,12 +156,69 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script>document.getElementById("text").setAttribute('size', '100');</script>
-    <script>var eightBtn = document.querySelector("#eight-task");
-
+    <script src="./script.js"></script>
+    <script>
+       var eightBtn = document.querySelector("#eight-task");
 
        eightBtn.addEventListener("click", function() {
        alert("Finally got right button to click!");
        });
     </script>
+    <script>var nineBtn = document.querySelector("#nine-task");
+
+      nineBtn.addEventListener("click", function() {
+      alert("Finally got nine button to click!");
+      });
+   </script>
+   <script>var nineBtn = document.querySelector("#ten-task");
+
+    nineBtn.addEventListener("click", function() {
+    alert("Finally got nine button to click!");
+    });
+   </script>
+   <script>var nineBtn = document.querySelector("#elev-task");
+
+    nineBtn.addEventListener("click", function() {
+    alert("Finally got nine button to click!");
+    });
+   </script>
+   <script>var nineBtn = document.querySelector("#twel-task");
+
+    nineBtn.addEventListener("click", function() {
+    alert("Finally got nine button to click!");
+    });
+   </script>
+   <script>var nineBtn = document.querySelector("#onep-task");
+
+    nineBtn.addEventListener("click", function() {
+    alert("Finally got nine button to click!");
+    });
+   </script>
+   <script>var nineBtn = document.querySelector("#twop-task");
+
+    nineBtn.addEventListener("click", function() {
+    alert("Finally got nine button to click!");
+    });
+   </script>
+   <script>var nineBtn = document.querySelector("#thrp-task");
+
+    nineBtn.addEventListener("click", function() {
+    alert("Finally got nine button to click!");
+    });
+   </script>
+   <script>var nineBtn = document.querySelector("#forp-task");
+
+        nineBtn.addEventListener("click", function() {
+        alert("Finally got nine button to click!");
+        });
+   </script>
+   <script>var nineBtn = document.querySelector("#fivp-task");
+
+    nineBtn.addEventListener("click", function() {
+    alert("Finally got nine button to click!");
+    });
+   </script>
+
+
   </body>
 </html>
