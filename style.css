@@ -76,13 +76,33 @@ th {
   background-color: #dddddd;
 }*/
 
-.row, .eightRow {
+.eightRow, .nineRow, .tenRow, .elevRow,
+.twelRow {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
-  background-color: azure;
+  background-color: rgb(212, 207, 207);
   margin-left: 0;
 }
+
+.onepRow {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;
+  background-color: #ff6961;
+  margin-left: 0;
+}
+
+.twopRow, .thrpRow,
+.forpRow, .fivpRow   {
+    white-space: pre-wrap;
+    height: 80px;
+    border-top: 1px solid white;
+    background-color: #77dd77;
+    margin-left: 0;
+}
+
+
 
 .hour {
   background-color: #ffffff;
