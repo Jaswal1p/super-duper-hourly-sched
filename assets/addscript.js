@@ -47,3 +47,8 @@ Array.from(rows).forEach(row => {
 function setColor(element, color) {
   element.style.backgroundColor = color;
 }
+
+
+
+
+
